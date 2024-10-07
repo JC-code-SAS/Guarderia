@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matricula | Centro Educativo Nuevos Lideres</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Styles -->
+</head>
+
+<body>
+  <div class="container-fluid text-center p-3">
+    <div class="row">
+      <div class="col">
+        <h4>Centro Educativo Nuevos Líderes</h4>
+        <p>
+          Educación que conduce a la construcción de un futuro mejor -
+          Licencia de funcionamiento número 12335 del 26 de septiembre de 2011
+          Codigo Dane 305001026203
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-form text-center registroMatricula">
+    <form action="" method="post" class="form form-register">
+      <div class="row">
+        <!-- Fecha de solicitud de ingreso -->
+        <div class="row justify-content-center p-1">
+          <div class="col-8 col-ms-4">
+            <div class="form-floating mb-3">
+              <input type="month" class="form-control" id="dateOfAdmission" placeholder="Fecha de ingreso" required />
+              <label for="dateOfAdmission">Fecha de la solicitud de ingreso</label>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de fecha de solicitud de ingreso -->
+
+        <!-- INICIO de Datos del alumno -->
+        <div class="row py-2">
+          <div class="col">
+            <h5>Datos del alumno</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="nameAlumn" placeholder="Nombre y apellidos del alumno"
+              required />
+            <label class="ms-2" for="nameAlumn">Nombre completo del alumno</label>
+          </div>
+
+          <div class="col form-floating mb-3">
+            <input type="date" class="form-control" id="birthdate" placeholder="Fecha de nacimiendo" required />
+            <label class="ms-2" for="birthdate">Fecha de nacimiento</label>
+          </div>
+        </div>
+        <!-- Lugar de nacimineto Alumno -->
+        <div class="row">
+          <div class="col-2 text-center mt-3">Lugar de nacimiendo</div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="country" placeholder="Pais" required />
+            <label class="ms-2" for="country">Pais</label>
+          </div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="birthDepartment" placeholder="Departamento" required />
+            <label class="ms-2" for="birthDepartment">Departamento</label>
+          </div>
+
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="municipalityOfBirth" placeholder="Municipio" required />
+            <label class="ms-2" for="municipalityOfBirth">Municipio</label>
+          </div>
+        </div>
+        <!-- Fin de lugar de nacimiento alumno -->
+
+        <!-- Doc de identidad -->
+        <div class="row">
+          <div class="col form-floating mb-3">
+            <input type="number" class="form-control" id="docNum" placeholder="Registro Civil" required />
+            <label class="ms-2" for="docNum">Registro Civil</label>
+          </div>
+        </div>
+        <!-- Inicio lugar de expedicion -->
+        <div class="row">
+          <div class="col-2 text-center mt-3">Lugar de expedicion</div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="countryOfIssueOfDocument" placeholder="Pais" required />
+            <label class="ms-2" for="countryOfIssueOfDocument">Pais</label>
+          </div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="documentIssuanceDepartment" placeholder="Departamento"
+              required />
+            <label class="ms-2" for="documentIssuanceDepartment">Departamento</label>
+          </div>
+
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="municipalityOfDocumentIssuance" placeholder="Municipio"
+              required />
+            <label class="ms-2" for="municipalityOfDocumentIssuance">Municipio</label>
+          </div>
+        </div>
+        <!-- Fin de Doc identidad -->
+        <!-- datos EPS -->
+        <div class="row">
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="fieldEPS" placeholder="EPS" required />
+            <label class="ms-2" for="fieldEPS">EPS</label>
+          </div>
+        </div>
+        <!-- FIN DATOS EPS -->
+        <!-- Salud y cuidados -->
+        <div class="row">
+          <div class="col from-group mb-3">
+            <label for="fieldAllergies">Alergias</label>
+            <textarea class="form-control mt-2" id="fieldAllergies" rows="2"
+              placeholder="Escribe aqui las alergias"></textarea>
+          </div>
+          <div class="col from-group mb-3">
+            <label for="fieldSpecialCare">cuidados especiales</label>
+            <textarea class="form-control mt-2" id="fieldSpecialCare" rows="2"
+              placeholder="Escribe aqui los cuidados especiales"></textarea>
+          </div>
+        </div>
+        <!-- FIN de salud y cuidados -->
+
+        <!-- Inicio Direccion -->
+        <div class="row">
+          <!-- <div class="col-2 text-center mt-1">Direccion de Residencia</div> -->
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="ResidenceAdress" placeholder="Direccion de Residencia"
+              required />
+            <label class="ms-2" for="ResidenceAdress">Direccion de Residencia</label>
+          </div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="neighborhood" placeholder="Barrio" required />
+            <label class="ms-2" for="neighborhood">Barrio</label>
+          </div>
+
+          <div class="col form-floating mb-3">
+            <input type="number" class="form-control" id="commune" placeholder="Comuna" required />
+            <label class="ms-2" for="commune">Comuna</label>
+          </div>
+        </div>
+        <!-- FIN Direccion -->
+
+        <!-- Telefono -->
+        <!-- <div class="row">
+          <div class="col form-floating mb-3">
+            <input type="number" class="form-control" id="campo_telefonoPrincipal" placeholder="Telefono" required />
+            <label class="ms-2" for="campo_telefonoPrincipal">Telefono</label>
+          </div>
+        </div> -->
+        <!-- FIN Telefono -->
+        <!-- FIN de Datos del alumno -->
+
+        <!-- Datos Padre -->
+        <div class="row py-2">
+          <h5>Datos del padre</h5>
+          <div class="col-6 form-floating mb-3">
+            <input type="text" class="form-control" id="nameDad"
+              placeholder="Ingrese el nombre completo del padre aquí" />
+            <label class="ms-2" for="nameDad">Nombre del padre</label>
+          </div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="docNumDad"
+              placeholder="Ingrese la numero de identificación aquí" />
+            <label class="ms-2" for="docNumDad">Documento de identificación</label>
+          </div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="occupationDad" placeholder="Ingrese la Ocupación aquí" />
+            <label class="ms-2" for="occupationDad">Ocupación</label>
+          </div>
+        </div>
+        <!-- Fin datos Padre -->
+
+        <!-- Datos Madre -->
+        <div class="row py-2">
+          <h5>Datos del Madre</h5>
+          <div class="col-6 form-floating mb-3">
+            <input type="text" class="form-control" id="nameMother"
+              placeholder="Ingrese el nombre completo de la Madre aquí" />
+            <label class="ms-2" for="nameMother">Nombre de la Madre</label>
+          </div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="docNumMother"
+              placeholder="Ingrese la numero de identificación aquí" />
+            <label class="ms-2" for="docNumMother">Documento de identificación</label>
+          </div>
+          <div class="col form-floating mb-3">
+            <input type="text" class="form-control" id="occupationMother" placeholder="Ingrese la Ocupación aquí" />
+            <label class="ms-2" for="occupationMother">Ocupación</label>
+          </div>
+        </div>
+        <!-- Fin datos Madre -->
+      </div>
+
+      <!-- Datos Acudiente1 -->
+      <div class="row py-2">
+        <h5>Datos del Acudiente 1</h5>
+        <div class="col-4 form-floating mb-3">
+          <input type="text" class="form-control" id="nameAttendant"
+            placeholder="Ingrese el nombre completo del Acudiente 1 aquí" required />
+          <label class="ms-2" for="nameAttendant">Nombre del Acudiente 1</label>
+        </div>
+        <div class="col form-floating mb-3">
+          <input type="number" class="form-control" id="docNumAttendant"
+            placeholder="Ingrese la numero de identificación aquí" required />
+          <label class="ms-2" for="docNumAttendant">Documento de identificación</label>
+        </div>
+        <div class="col form-floating mb-3">
+          <input type="email" class="form-control" id="docEmailAttendant" placeholder="Ingrese el correo aquí" />
+          <label class="ms-2" for="docEmailAttendant">Email</label>
+        </div>
+      </div>
+      <div class="row py-2">
+        <!-- Telefono -->
+        <div class="col form-floating mb-3">
+          <input type="number" class="form-control" id="numberPhoneAttendant" placeholder="Telefono1" required />
+          <label class="ms-2" for="numberPhoneAttendant">Telefono1</label>
+        </div>
+        <!-- FIN Telefono -->
+
+        <!-- Telefono -->
+        <div class="col form-floating mb-3">
+          <input type="number" class="form-control" id="numberPhoneAttendant2" placeholder="Telefono2" />
+          <label class="ms-2" for="numberPhoneAttendant2">Telefono2</label>
+        </div>
+        <!-- FIN Telefono -->
+
+        <!-- Parentesco -->
+        <div class="col form-floating mb-3">
+          <input type="text" class="form-control" id="attendantKinship" placeholder="Parentesco acudiente 1" required />
+          <label class="ms-2" for="attendantKinship">Parentesco</label>
+        </div>
+        <!-- FIN Parentesco -->
+      </div>
+      <!-- Fin datos Acudiente1 -->
+
+      <!-- Datos Acudiente2  -->
+      <div class="row py-2">
+        <h5>Datos del Acudiente 2</h5>
+        <div class="col-4 form-floating mb-3">
+          <input type="text" class="form-control" id="nameAttendantNumber2"
+            placeholder="Ingrese el nombre completo del Acudiente 2 aquí" />
+          <label class="ms-2" for="nameAttendantNumber2">Nombre del Acudiente 2</label>
+        </div>
+        <div class="col form-floating mb-3">
+          <input type="number" class="form-control" id="docNumAttendantNumber2"
+            placeholder="Ingrese la numero de identificación aquí" />
+          <label class="ms-2" for="docNumAttendantNumber2">Documento de identificación</label>
+        </div>
+        <div class="col form-floating mb-3">
+          <input type="email" class="form-control" id="docEmailAttendantNumber2"
+            placeholder="Ingrese la Ocupación aquí" />
+          <label class="ms-2" for="docEmailAttendantNumber2">Email</label>
+        </div>
+      </div>
+      <div class="row py-2">
+        <!-- Telefono -->
+        <div class="col form-floating mb-3">
+          <input type="number" class="form-control" id="numberPhoneAttendantNumber2" placeholder="Telefono1" />
+          <label class="ms-2" for="numberPhoneAttendantNumber2">Telefono1</label>
+        </div>
+        <!-- FIN Telefono -->
+
+        <!-- Telefono -->
+        <div class="col form-floating mb-3">
+          <input type="number" class="form-control" id="numberPhoneAttendantNumber2_2" placeholder="Telefono2" />
+          <label class="ms-2" for="numberPhoneAttendantNumber2_2">Telefono2</label>
+        </div>
+        <!-- FIN Telefono -->
+
+        <!-- Parentesco -->
+        <div class="col form-floating mb-3">
+          <input type="text" class="form-control" id="attendantKinshipNumber2" placeholder="Parentesco acudiente 2" />
+          <label class="ms-2" for="attendantKinshipNumber2">Parentesco</label>
+        </div>
+        <!-- FIN Parentesco -->
+      </div>
+      <!-- Fin datos Acudiente2 -->
+
+      <!-- Adicional -->
+      <div class="row">
+        <div class="col-2 text-center mt-3">
+          Establecimiento donde curso el año anterior
+        </div>
+        <div class="col form-floating mb-3">
+          <input type="text" class="form-control" id="establishmentCourse" placeholder="Nombre del establecimiento" />
+          <label class="ms-2" for="establishmentCourse">Nombre del establecimiento</label>
+        </div>
+        <div class="col form-floating mb-3">
+          <input type="text" class="form-control" id="LastDegreeCompleted" placeholder="Último Año cursado" />
+          <label class="ms-2" for="LastDegreeCompleted">Último grado cursado</label>
+        </div>
+
+        <div class="col form-floating mb-3">
+          <input type="number" class="form-control" id="currentYear" placeholder="Año en que lo curso" />
+          <label class="ms-2" for="currentYear">Año en que lo curso</label>
+        </div>
+      </div>
+      <!-- FIN adicional -->
+
+      <!-- file up -->
+      <div class="row">
+        <div class="form-group col-3">
+          <select id="displacedCondition" class="form-control" required inputmode="text">
+            <option selected>Posee condición de desplazado</option>
+            <option>Si</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="input-group mb-3 col">
+          <div class="input-group-prepend">
+            <span class="input-group-text">COMPROMISOS PADRES DE FAMILIA</span>
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="parentCommitment" required />
+            <label class="custom-file-label" for="parentCommitment">Buscar archivo</label>
+          </div>
+        </div>
+
+        <div class="input-group mb-3 col-12">
+          <div class="input-group-prepend">
+            <span class="input-group-text">AUTORIZACIÓN PARA LA PUBLICACIÓN DE IMÁGENES DE LOS
+              ESTUDIANTES</span>
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="authorizationImgStudents" required />
+            <label class="custom-file-label" for="authorizationImgStudents">Buscar archivo</label>
+          </div>
+        </div>
+      </div>
+      <!-- FIN file up -->
+
+
+      <!-- INICIO Preguntas -->
+      <div class="row mt-3">
+        <div class="col">
+          <h4>
+            Como padres estamos llamados a ser partícipes de la educación de
+            nuestros hijos.
+          </h4>
+        </div>
+
+        <div class="div">
+          <p>
+            Escriba tres aspectos importantes que quiera encontrar en nuestra
+            institución
+          </p>
+        </div>
+        <div class="form-group mb-3">
+          <input type="text" class="form-control mb-1" id="aspect1" aria-describedby="Aspecto importante 1"
+            placeholder="1." required />
+          <input type="text" class="form-control mb-1" id="aspect2" aria-describedby="Aspecto importante 2"
+            placeholder="2." required />
+          <input type="text" class="form-control mb-1" id="aspect3" aria-describedby="Aspecto importante 3"
+            placeholder="3." required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 form-group mb-3">
+          <label for="relationshipSiblings">¿Cómo es la relacion con sus hermanos?</label>
+          <textarea type="text" class="form-control" id="relationshipSiblings" rows="2"></textarea>
+        </div>
+        <div class="col-6 form-group mb-3">
+          <label for="authority">¿Quien o quienes son la autoridad para el niño(a)?</label>
+          <textarea type="text" class="form-control" id="authority" rows="2" required></textarea>
+        </div>
+        <div class="col-6 form-group mb-3">
+          <label for="corrective">¿Cual es el tipo de correctiva y/o sanción que ustedes como
+            padres aplican sobre el niño(a) ante comportamoientos
+            negativos?</label>
+          <textarea type="text" class="form-control" id="corrective" rows="2" required></textarea>
+        </div>
+        <div class="col-6 form-group mb-3">
+          <label for="award">¿Como premian al niño(a) cuando tiene un buen
+            comportamiento?</label>
+          <textarea type="text" class="form-control" id="award" rows="2"></textarea>
+        </div>
+        <div class="col-12 form-group mb-3">
+          <label for="calledAttention">¿Como responde el niño (a) a los llamados de atención a estos
+            conectivos?</label>
+          <textarea type="text" class="form-control" id="calledAttention" rows="2" required></textarea>
+        </div>
+        <div class="col-12 form-group mb-3">
+          <label for="otherObservations">
+            Otras observaciones o comentarios respecto al desarrollo del
+            alumno (a) o situción relevantes para tener en cuenta?
+          </label>
+          <textarea type="text" class="form-control" id="otherObservations" rows="2" required></textarea>
+        </div>
+      </div>
+      <!-- FIN Preguntas -->
+
+      <!-- Botón de envío -->
+      <button type="submit" value="RegistarMatricula" id="btnSubmitMatricula"
+        class="btn btn-primary px-5 py-3 m-5">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="../scripts/axiosMatricula.js" type="module">
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../styles/style_login.css" />
+  <link rel="icon" href="../img/LOGOPRACTICAS_OSCURO.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet" />
+
+  <title>Registro e Inicio de Sesión</title>
+</head>
+
+<body>
+  <!-- Inicio de resgistrarme -->
+  <div class="container-form register">
+    <div class="information">
+      <div class="info-childs">
+        <a class="btn-home" href="../../index.html"><i class='bx bx-left-arrow-alt'></i></a>
+        <h2>Bienvenido Centro Educativo Nuevos Lìderes</h2>
+        <p>
+          Para unirte por favor Inicia Sesión con tus
+          datos
+        </p>
+        <input type="button" value="Iniciar Sesión" id="sing-in" />
+      </div>
+    </div>
+
+    <!-- Formulario de registro -->
+    <div class="form-information">
+      <div class="form-information-childs">
+        <h2>Crear mi Cuenta</h2>
+        <form class="form form-register" novalidate>
+          <div>
+            <label>
+              <i class="bx bx-user"></i>
+              <input type="text" id="userName" placeholder="Nombres" name="userName" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class="bx bx-user"></i>
+              <input type="text" id="userLastName" placeholder="Apellidos" name="userLastName" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class='bx bx-id-card'></i>
+              <select id="docType" name="docType" required>
+                <option value="" disabled selected hidden>Selecciona tu tipo de documento</option>
+                <option value="CC">Cedula de Ciudadania</option>
+                <option value="CE">Cedula de Extrangeria</option>
+                <option value="option3">??????????</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class="bx bx-id-card"></i>
+              <input type="text" id="docNum" placeholder="Escribe tu numero de documento" name="docNum" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class="bx bx-envelope"></i>
+              <input type="email" id="userEmail" placeholder="Correo Electronico" name="userEmail" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class="bx bx-lock-alt"></i>
+              <input type="password" id="userPassword" placeholder="Contraseña" name="userPassword" />
+              <button id="btn-toggle">
+                <i class='bx bx-hide'></i>
+              </button>
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class="bx bx-mobile"></i>
+              <input type="text" id="numberPhone" placeholder="Escribe tu numero de celular" name="numberPhone" />
+            </label>
+          </div>
+          <input type="submit" value="Registrame" id="log-up" />
+          <div class="alerta-error">Todos los campos son obligatorios</div>
+          <div class="alerta-exito">Te has registrado correctamente</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Fin del  registrarme -->
+
+  <!-- Inicio de sesion guarderia -->
+  <div class="container-form login hide">
+    <div class="information">
+      <div class="info-childs">
+        <a class="btn-home" href="../../index.html"><i class='bx bx-left-arrow-alt'></i></a>
+        <h2>¡¡Bienvenido Nuevamente!!</h2>
+        <p>
+          Para unirte por favor registrate con tus datos
+        </p>
+        <input type="button" value="Registrarse" id="sing-up" />
+      </div>
+    </div>
+
+    <!-- Formulario de sesion -->
+    <div class="form-information">
+      <div class="form-information-childs">
+        <h2>Iniciar Sesión</h2>
+        <form class="form form-login" novalidate>
+          <div>
+            <label>
+              <i class="bx bx-envelope"></i>
+              <input type="email" placeholder="Correo Electronico" name="userEmail" id="email" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <i class="bx bx-lock-alt"></i>
+              <input type="password" placeholder="Contraseña" name="userPassword" id="password" />
+            </label>
+          </div>
+          <input type="submit" value="Iniciar Sesión" id="log-in" />
+          <div class="alerta-error">Todos los campos son obligatorios</div>
+          <div class="alerta-exito">Iniciaste sesión correctamente</div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- fin de inicio de sesión -->
+
+  <!-- Scripts -->
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../scripts/axiosSesion.js"></script>
+
+  <script src="../scripts/login.js" type="module"></script>
+  <script src="../scripts/register.js" type="module"></script>
+</body>
+
+</html>
